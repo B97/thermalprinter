@@ -1,30 +1,96 @@
 <!DOCTYPE html>
-<button onclick="switchTo('ar')">العربية</button>
-
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Imprimante Thermique Mini</title>
-</head>
-<body>
-  <header>
-    <button onclick="switchTo('ar')">العربية</button>
-  </header>
-  <h1>Bienvenue sur notre site</h1>
-  <p>Découvrez l'imprimante thermique la plus compacte et pratique.</p>
-</body>
-</html>
-
-<html lang="fr">
-<head>
-    <header>
-        <button onclick="switchTo('ar')">العربية</button>
-    </header>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Imprimante Thermique Mini</title>
-  <link rel="stylesheet" href="styles.css"> <!-- Optional stylesheet link -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #007bff;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    header button {
+      background-color: #fff;
+      color: #007bff;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    header button:hover {
+      background-color: #e2e6ea;
+    }
+    main {
+      padding: 2rem;
+      text-align: center;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    h1 {
+      color: #007bff;
+    }
+    h2 {
+      color: #495057;
+    }
+    ul, ol {
+      text-align: left;
+      margin: 0 auto;
+      max-width: 400px;
+    }
+    img {
+      border: 2px solid #007bff;
+      border-radius: 10px;
+    }
+    form {
+      background-color: #f8f9fa;
+      padding: 1rem;
+      border: 1px solid #ced4da;
+      border-radius: 5px;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    form label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+    form input, form textarea, form button {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ced4da;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    form button {
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #0056b3;
+    }
+    footer {
+      background-color: #343a40;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -69,7 +135,7 @@
 
     <section>
       <h2>Passer Votre Commande</h2>
-      <form action="https://example.com/order" method="POST">
+        <form method="POST" action="https://script.google.com/macros/s/AKfycbwm2iTidbrNPzMILgyLcl2Ny5vgAb_hoTN3sL1CqZ1KrKU_qPnlJo9zoLVaJ-FWnmoU/exec">
         <label for="name">Nom :</label>
         <input type="text" id="name" name="name" required>
 
