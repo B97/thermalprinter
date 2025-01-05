@@ -199,13 +199,37 @@
 
         <div class="order-section">
             <h2>اطلب الآن قبل نفاد الكمية</h2>
-			<form method="POST" action="https://script.google.com/macros/s/AKfycbwm2iTidbrNPzMILgyLcl2Ny5vgAb_hoTN3sL1CqZ1KrKU_qPnlJo9zoLVaJ-FWnmoU/exec">
+            <form id="orderForm">
                 <div class="form-group">
                     <label for="name">الاسم الكامل:</label>
                     <input type="text" id="name" name="name" placeholder="مثال: فاطمة الزهراء" required>
                 </div>
                 <div class="form-group">
-                    <label for="phone">مَرْيَم:</label>
+                    <label for="phone">رقم الهاتف:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="مثال: +212 6 12 34 56 78" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">عنوان التوصيل:</label>
+                    <textarea id="address" name="address" placeholder="مثال: 123، شارع مراكش، الدار البيضاء" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">الكمية:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" placeholder="1" required>
+                </div>
+                <button type="submit">اطلب الآن</button>
+            </form>
+        </div>
+    </div>
+
+        <div class="order-section">
+            <h2>اطلب الآن قبل نفاد الكمية</h2>
+			<form method="POST" action="https://script.google.com/macros/s/AKfycbwm2iTidbrNPzMILgyLcl2Ny5vgAb_hoTN3sL1CqZ1KrKU_qPnlJo9zoLVaJ-FWnmoU/exec">
+                <div class="form-group">
+                    <label for="name">الاسم الكامل:</label>
+                    <input type="text" id="name" name="name" placeholder="مثال: مَرْيَم" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">قم الهاتف:</label>
                     <input type="tel" id="phone" name="phone" placeholder="مثال: +212 6 12 34 56 78" required>
                 </div>
                 <div class="form-group">
@@ -226,4 +250,5 @@
     </footer>
 </body>
 </html>
+
 
