@@ -52,6 +52,14 @@
       border: 2px solid #007bff;
       border-radius: 10px;
     }
+    .highlight {
+      color: red;
+      font-weight: bold;
+    }
+    .countdown {
+      font-size: 1.5rem;
+      color: #dc3545;
+    }
     form {
       background-color: #f8f9fa;
       padding: 1rem;
@@ -90,6 +98,15 @@
       bottom: 0;
       width: 100%;
     }
+    .testimonials {
+      background-color: #e9ecef;
+      padding: 1rem;
+      border-radius: 5px;
+    }
+    .testimonial {
+      margin-bottom: 1rem;
+      font-style: italic;
+    }
   </style>
 </head>
 <body>
@@ -124,12 +141,14 @@
 
     <section>
       <h2>Offre Limitée !</h2>
-      <p><strong>Prix exceptionnel : 249 DH seulement</strong>. Commandez maintenant avant qu'il ne soit trop tard !</p>
+      <p><span class="highlight">Prix exceptionnel : 249 DH seulement</span>. Commandez maintenant avant qu'il ne soit trop tard !</p>
+      <p class="countdown">Dépêchez-vous ! Offre valable jusqu'à la fin de la journée.</p>
     </section>
 
     <section>
       <h2>Passer Votre Commande</h2>
-        <form method="POST" action="https://script.google.com/macros/s/AKfycbwm2iTidbrNPzMILgyLcl2Ny5vgAb_hoTN3sL1CqZ1KrKU_qPnlJo9zoLVaJ-FWnmoU/exec">
+      <p><span class="highlight">Paiement à la livraison.</span> Commandez en toute confiance.</p>
+      <form method="POST" action="https://script.google.com/macros/s/AKfycbwm2iTidbrNPzMILgyLcl2Ny5vgAb_hoTN3sL1CqZ1KrKU_qPnlJo9zoLVaJ-FWnmoU/exec">
         <label for="name">Nom :</label>
         <input type="text" id="name" name="name" required>
 
@@ -150,6 +169,5 @@
   <footer>
     <p>&copy; 2025 SmartShary. Tous droits réservés.</p>
   </footer>
-
 </body>
 </html>
